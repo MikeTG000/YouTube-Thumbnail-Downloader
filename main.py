@@ -1,7 +1,7 @@
 import os
 from pyrogram import Client, filters
-from pyrogram.typres import *
-from pyrogram import InlineKeyboardMarkup, InlineKeyboardButtons
+from pyrogram.types import *
+from pyrogram import InlineKeyboardMarkup, InlineKeyboardButton
 
 Bot = Client(
     "my first project",
