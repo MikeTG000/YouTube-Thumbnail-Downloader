@@ -4,34 +4,26 @@ from pyrogram.types import *
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 Bot = Client(
-    "my first project",
+    "my-first-project",
     api_id = 8792993,
     api_hash = "32606d7130c8b67b2b11620aa0ee016d",
     bot_token = "6023336627:AAGGJH2sldGKaYiBnbyITt-eMS4ov9sAiKs"
 )
 
 START_TEXT="""
-Hey {} 🥹,
+Hey {} ,
 
 I'm just an age calculating bot. You can calculate your age using this bot. Press the help button to know more.
 
 """
 START_BUTTONS = InlineKeyboardMarkup( 
          [[ 
-         InlineKeyboardButton('Help', callback_data='help'), 
+         InlineKeyboardButton('google', callback_data='help'), 
          ],[ 
          InlineKeyboardButton('About', callback_data='about'),         
          ]] 
      )
     
-HELP_TEXT="""
-Hi {}.
-
-"""
-ABOUT_TEXT="""
-
-HEY
-"""
 
 @Bot.on_message(filters.command(["start"])) 
 async def start(bot, update): 
